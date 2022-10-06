@@ -1,0 +1,79 @@
+[
+    {
+        "id": 1,
+        "title": "Linguagem de Programação",
+        "description": "Pesquisa da linguagem de programação mais utilizada.",
+        "author": 1,
+        "created": "2022-10-06T21:12:26.307629Z",
+        "updated": "2022-10-06T21:12:26.307629Z",
+        "is_active": true,
+        "questions": [
+            {
+                "id": 1,
+                "question": "Qual linguagem você mais gosta?",
+                "survey": 1,
+                "alternatives": [
+                    {
+                        "id": 1,
+                        "alternative": "Python",
+                        "question": 1
+                    },
+                    {
+                        "id": 2,
+                        "alternative": "JavaScript",
+                        "question": 1
+                    },
+                    {
+                        "id": 3,
+                        "alternative": "C#",
+                        "question": 1
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "question": "Qual linguagem você trabalha?",
+                "survey": 1,
+                "alternatives": [
+                    {
+                        "id": 4,
+                        "alternative": "Python",
+                        "question": 2
+                    },
+                    {
+                        "id": 5,
+                        "alternative": "JavaScript",
+                        "question": 2
+                    },
+                    {
+                        "id": 6,
+                        "alternative": "C#",
+                        "question": 2
+                    }
+                ]
+            },
+            {
+                "id": 3,
+                "question": "Qual linguagem você está estudando?",
+                "survey": 1,
+                "alternatives": [
+                    {
+                        "id": 7,
+                        "alternative": "Python",
+                        "question": 3
+                    },
+                    {
+                        "id": 8,
+                        "alternative": "JavaScript",
+                        "question": 3
+                    },
+                    {
+                        "id": 9,
+                        "alternative": "C#",
+                        "question": 3
+                    }
+                ]
+            }
+        ]
+    }
+]
