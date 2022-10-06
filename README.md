@@ -1,3 +1,18 @@
+# Take5 - Surveys
+
+## Seed
+O arquivo `shell.py` irá alimentar o banco de dados com uma pesquisa simples.
+
+No interpretador do linux rode:
+`python3 take5/manage.py shell < shell.py`
+
+No interpretador do powershell rode:
+`python take5\manage.py shell --command="exec(open('shell.py').read())"`
+
+Obs.: No interpretador do powershell não foi possível o enconding de acentuação.
+Para escapar desse problema rode `python take5\manage.py shell` e cole todo o conteúdo do do arquivo `shell.py` no console do shell.
+
+---
 # Take5 - Contratação Desenvolvedor Back-end
 Olá, este é o teste para contratação de um desenvolvedor Back-end
 
