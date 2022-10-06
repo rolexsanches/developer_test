@@ -1,4 +1,26 @@
 # Take5 - Surveys
+## Descrição do Projeto
+Sistema de criação de Pesquisas. Cada Pesquisa pode ter N questões e cada questão pode ter N alternativas.
+
+## Rodando o Projeto
+Para executar o projeto, execute os comandos abaixo:
+1. Iniciliaze o banco de daddos
+```python take5/manage.py makemigrations```
+```python take5/manage.py migrate```
+
+2. Crie um usuário:
+```python take5/manage.py createsuperuser```
+
+3. Iniciliaze o servidor:
+```python take5/manage.py runserver```
+
+Crie uma pesquisa atráves do painel admin do django em http://localhost:8000/admin ou siga os passos da seção Seed.
+
+## Endpoints
+- / : Api Root, retorna as rotas disponíveis.
+- /surveys : Retorna uma lista com as pesquisas disponíveis.
+- /surveys-questions : Retorna uma lista com as questões disponíveis.
+- /surveys-questions-alternatives : Retorna uma lista com as alternativas disponíveis.
 
 ## Seed
 O arquivo `shell.py` irá alimentar o banco de dados com uma pesquisa simples.
