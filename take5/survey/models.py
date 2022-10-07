@@ -11,7 +11,7 @@ class Survey(models.Model):
         return self.title
 
 class SurveyQuestion(models.Model):
-    survey = models.ForeignKey(Survey, on_delete=models.CASCADE)
+    survey = models.ForeignKey(Survey, related_name='survey_questions',on_delete=models.CASCADE)
     survey_question = models.TextField(max_length=500)
 
     def __str__(self):
@@ -19,7 +19,7 @@ class SurveyQuestion(models.Model):
 
 
 class SurveyQuestionAlternative(models.Model):
-    survey_question = models.ForeignKey(SurveyQuestion, on_delete=models.CASCADE)
+    survey_question = models.ForeignKey(SurveyQuestion, related_name='survey_alternatives',on_delete=models.CASCADE)
     survey_alternative = models.CharField(max_length=255)
     survey_choice_alternative = models.CharField(max_length=1)
 
