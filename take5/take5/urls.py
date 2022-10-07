@@ -7,9 +7,9 @@ from survey.views import SurveyQuestionAlternativeViewSet, SurveyQuestionViewSet
 
 
 router = routers.DefaultRouter()
-router.register('survey', SurveyViewSet, basename='Survey')
-router.register('survey-question', SurveyQuestionViewSet, basename='Cursos')
-router.register('survey-alternatives', SurveyQuestionAlternativeViewSet, basename='Matriculas')
+router.register('survey', SurveyViewSet)
+router.register('survey-question', SurveyQuestionViewSet)
+router.register('survey-alternatives', SurveyQuestionAlternativeViewSet )
 
 
 urlpatterns = [
