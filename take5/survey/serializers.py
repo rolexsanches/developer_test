@@ -1,6 +1,8 @@
 from survey.models import Survey, SurveyQuestion, SurveyQuestionAlternative
 from rest_framework import serializers
 
+# https://www.django-rest-framework.org/topics/writable-nested-serializers/
+
 class SurveyQuestionAlternativeSerializer(serializers.ModelSerializer):
     class Meta:
         model = SurveyQuestionAlternative
