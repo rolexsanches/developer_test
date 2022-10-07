@@ -19,33 +19,17 @@ class SurveyQuestion(models.Model):
 
 
 class SurveyQuestionAlternative(models.Model):
-    CHOICES = (
-        ('A','Alternativa A'),
-        ('B','Alternativa B'),
-        ('C','Alternativa C'),
-        ('D','Alternativa D'),
-        ('E', 'Alternativa E')
-    )
-
     survey_question = models.ForeignKey(SurveyQuestion, on_delete=models.CASCADE)
     survey_alternative = models.CharField(max_length=255)
-    survey_choice_alternative = models.CharField(max_length=1, choices=CHOICES)
+    survey_choice_alternative = models.CharField(max_length=1)
 
     def __str__(self):
         return self.survey_alternative
 
 class SurveyUserAnswer(models.Model):
-    CHOICES = (
-        ('A', 'Alternativa A'),
-        ('B', 'Alternativa B'),
-        ('C', 'Alternativa C'),
-        ('D', 'Alternativa D'),
-        ('E', 'Alternativa E')
-    )
-
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     question = models.ForeignKey(SurveyQuestion, on_delete=models.CASCADE)
-    user_answer = models.CharField(max_length=1, choices=CHOICES)
+    user_answer = models.CharField(max_length=1)
 
 
     def __str__(self):

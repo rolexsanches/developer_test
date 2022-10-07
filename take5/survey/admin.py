@@ -13,7 +13,7 @@ class SurveyQuestionAdmin(admin.ModelAdmin):
 
 admin.site.register(SurveyQuestion, SurveyQuestionAdmin)
 class SurveyQuestionAlternativeAdmin(admin.ModelAdmin):
-    list_display = ('survey_question', 'survey_alternative', 'survey_choice_alternative')
+    list_display = ('survey_question', 'survey_alternative', )
 
 admin.site.register(SurveyQuestionAlternative, SurveyQuestionAlternativeAdmin)
 class SurveyUserAnswerAdmin(admin.ModelAdmin):
