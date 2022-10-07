@@ -24,6 +24,7 @@ class SurveyQuestionAlternative(models.Model):
         ('B','Alternativa B'),
         ('C','Alternativa C'),
         ('D','Alternativa D'),
+        ('E', 'Alternativa E')
     )
 
     survey_question = models.ForeignKey(SurveyQuestion, on_delete=models.CASCADE)
@@ -38,7 +39,8 @@ class SurveyUserAnswer(models.Model):
         ('A', 'Alternativa A'),
         ('B', 'Alternativa B'),
         ('C', 'Alternativa C'),
-        ('D', 'Alternativa D')
+        ('D', 'Alternativa D'),
+        ('E', 'Alternativa E')
     )
 
     user = models.ForeignKey(User, on_delete=models.CASCADE)
