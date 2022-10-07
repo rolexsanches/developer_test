@@ -1,3 +1,29 @@
+# Rodando aplicação
+
+Clone o repositório e faça na pasta base:
+
+    git checkout andrepatrinicola@gmail.com
+
+    python3 -m venv venv
+
+    source venv/bin/activate
+
+    pip install -r requirements.txt
+
+    python3 take5/manage.py migrate
+
+    python3 take5/manage.py createsuperuser
+
+    python3 take/manage.py runserver
+
+
+Obs: Para comandos em CMD do windows substituir python3 por python e source venv/bin/activate por cd venv/Scripts activate
+# Adicionando pesquisa
+
+Para adicionar uma pesquisa deve-se preencher as tabelas necessárias no /admin
+
+É possivel realizar uma simulação das opções de preenchimento dos campos por um usuário.
+
 # Take5 - Contratação Desenvolvedor Back-end
 Olá, este é o teste para contratação de um desenvolvedor Back-end
 
