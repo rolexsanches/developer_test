@@ -1,0 +1,120 @@
+[
+    {
+        "id": 1,
+        "title": "Linguagens de programação",
+        "published_at": "2022-10-07T22:01:21.736506-03:00",
+        "survey_questions": [
+            {
+                "id": 1,
+                "survey": 1,
+                "survey_question": "Qual dessas linguagens de programação você tem mais afinidade?",
+                "survey_alternatives": [
+                    {
+                        "id": 1,
+                        "survey_question": 1,
+                        "survey_alternative": "Python",
+                        "survey_choice_alternative": "A"
+                    },
+                    {
+                        "id": 2,
+                        "survey_question": 1,
+                        "survey_alternative": "Javascript",
+                        "survey_choice_alternative": "B"
+                    },
+                    {
+                        "id": 3,
+                        "survey_question": 1,
+                        "survey_alternative": "Ruby",
+                        "survey_choice_alternative": "C"
+                    },
+                    {
+                        "id": 4,
+                        "survey_question": 1,
+                        "survey_alternative": "Java",
+                        "survey_choice_alternative": "D"
+                    },
+                    {
+                        "id": 5,
+                        "survey_question": 1,
+                        "survey_alternative": "Não tenho nenhuma afinidade",
+                        "survey_choice_alternative": "E"
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "survey": 1,
+                "survey_question": "Qual dessas linguagens de programação você mais gosta?",
+                "survey_alternatives": [
+                    {
+                        "id": 6,
+                        "survey_question": 2,
+                        "survey_alternative": "Python",
+                        "survey_choice_alternative": "A"
+                    },
+                    {
+                        "id": 7,
+                        "survey_question": 2,
+                        "survey_alternative": "Javascript",
+                        "survey_choice_alternative": "B"
+                    },
+                    {
+                        "id": 8,
+                        "survey_question": 2,
+                        "survey_alternative": "Ruby",
+                        "survey_choice_alternative": "C"
+                    },
+                    {
+                        "id": 9,
+                        "survey_question": 2,
+                        "survey_alternative": "Java",
+                        "survey_choice_alternative": "D"
+                    },
+                    {
+                        "id": 10,
+                        "survey_question": 2,
+                        "survey_alternative": "Não gosto de nenhuma delas",
+                        "survey_choice_alternative": "E"
+                    }
+                ]
+            },
+            {
+                "id": 3,
+                "survey": 1,
+                "survey_question": "Quais destas linguagens de programação você menos tem afinidade?",
+                "survey_alternatives": [
+                    {
+                        "id": 11,
+                        "survey_question": 3,
+                        "survey_alternative": "COBOL",
+                        "survey_choice_alternative": "A"
+                    },
+                    {
+                        "id": 12,
+                        "survey_question": 3,
+                        "survey_alternative": "Pascal",
+                        "survey_choice_alternative": "B"
+                    },
+                    {
+                        "id": 13,
+                        "survey_question": 3,
+                        "survey_alternative": "Fortran",
+                        "survey_choice_alternative": "C"
+                    },
+                    {
+                        "id": 14,
+                        "survey_question": 3,
+                        "survey_alternative": "C",
+                        "survey_choice_alternative": "D"
+                    },
+                    {
+                        "id": 15,
+                        "survey_question": 3,
+                        "survey_alternative": "Tenho afinidade semelhante com todas elas",
+                        "survey_choice_alternative": "E"
+                    }
+                ]
+            }
+        ]
+    }
+]
