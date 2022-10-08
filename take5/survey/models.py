@@ -6,9 +6,13 @@ from django.contrib.auth.models import User
 
 class Survey(models.Model):
     title = models.CharField(max_length=255)
-    
+    description = models.TextField(max_length=500)
+    user = models.ForeignKey(User, on_delete=models.CASCADE, null=True)
+    published_at = models.DateTimeField(auto_now=True)    
+
     def __str__(self):
         return self.title
+
 
 class SurveyQuestion(models.Model):
     survey = models.ForeignKey(Survey, related_name='survey_questions',on_delete=models.CASCADE)
@@ -25,12 +29,13 @@ class SurveyQuestionAlternative(models.Model):
 
     def __str__(self):
         return self.survey_alternative
+        
 
 class SurveyUserAnswer(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     question = models.ForeignKey(SurveyQuestion, on_delete=models.CASCADE)
     user_answer = models.CharField(max_length=1)
-
+    submited_at = models.DateTimeField(auto_now=True)
 
     def __str__(self):
         return self.user_answer

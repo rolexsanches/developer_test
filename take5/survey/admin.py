@@ -5,19 +5,22 @@ from survey.models import Survey, SurveyQuestion, SurveyQuestionAlternative, Sur
 # Register your models here.
 
 class SurveyAdmin(admin.ModelAdmin):
-    list_display = ('title',)
+    list_display = ('title', 'description', 'published_at')
 
 admin.site.register(Survey, SurveyAdmin)
+
 class SurveyQuestionAdmin(admin.ModelAdmin):
     list_display = ('survey', 'survey_question')
 
 admin.site.register(SurveyQuestion, SurveyQuestionAdmin)
+
 class SurveyQuestionAlternativeAdmin(admin.ModelAdmin):
     list_display = ('survey_question', 'survey_alternative', )
 
 admin.site.register(SurveyQuestionAlternative, SurveyQuestionAlternativeAdmin)
+
 class SurveyUserAnswerAdmin(admin.ModelAdmin):
-    list_display = ('user', 'question', 'user_answer')
+    list_display = ('user', 'question', 'user_answer', 'submited_at')
 
 admin.site.register(SurveyUserAnswer, SurveyUserAnswerAdmin)
 
