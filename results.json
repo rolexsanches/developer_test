@@ -2,7 +2,8 @@
     {
         "id": 1,
         "title": "Linguagens de programação",
-        "published_at": "2022-10-07T22:01:21.736506-03:00",
+        "description": "Pesquisa para verificar a popularidade de linguagens de programação",
+        "published_at": "2022-10-10T12:38:42.444184-03:00",
         "survey_questions": [
             {
                 "id": 1,
