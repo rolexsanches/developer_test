@@ -1,0 +1,73 @@
+[
+    {
+        "name": "Game genre",
+        "description": "Preference for FPS or MOBA",
+        "questions": [
+            {
+                "text": "Do you play games?",
+                "alternatives": [
+                    {
+                        "alternative": "Yes"
+                    },
+                    {
+                        "alternative": "No"
+                    }
+                ]
+            },
+            {
+                "text": "What's your preferred platform?",
+                "alternatives": [
+                    {
+                        "alternative": "PC"
+                    },
+                    {
+                        "alternative": "PS4"
+                    },
+                    {
+                        "alternative": "XBOX"
+                    },
+                    {
+                        "alternative": "Mobile"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Pet preferences",
+        "description": "Find people's pet preferences",
+        "questions": [
+            {
+                "text": "Do you have a pet?",
+                "alternatives": [
+                    {
+                        "alternative": "Yes"
+                    },
+                    {
+                        "alternative": "No"
+                    }
+                ]
+            },
+            {
+                "text": "Which kind of pet?",
+                "alternatives": [
+                    {
+                        "alternative": "Dog"
+                    },
+                    {
+                        "alternative": "Cat"
+                    },
+                    {
+                        "alternative": "Bird"
+                    },
+                    {
+                        "alternative": "Snake"
+                    },
+                    {
+                        "alternative": "Baby hippo"
+                    }
+                ]
+            }
+        ]
+    }
+]
