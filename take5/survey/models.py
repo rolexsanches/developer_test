@@ -13,7 +13,8 @@ class Survey(models.Model):
 
 class SurveyQuestion(models.Model):
     question = models.TextField()
-    survey = models.ForeignKey(Survey, on_delete=models.CASCADE)
+    survey = models.ForeignKey(
+        Survey, related_name='questions', on_delete=models.CASCADE)
 
     def __str__(self):
         return f'{self.question}'
@@ -21,7 +22,8 @@ class SurveyQuestion(models.Model):
 
 class SurveyQuestionAlternative(models.Model):
     alternative = models.TextField()
-    question = models.ForeignKey(SurveyQuestion, on_delete=models.CASCADE)
+    question = models.ForeignKey(
+        SurveyQuestion, related_name='alternatives', on_delete=models.CASCADE)
 
     def __str__(self):
         return f'{self.alternative}'
