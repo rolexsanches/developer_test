@@ -16,16 +16,16 @@ def surveys(request) -> Response:
     if request.method == 'GET':
         if request.GET.get('id', False):
             try:
-                query = Survey.objects.prefetch_related('questions').get(
-                    pk=request.query_params['id'])
-                serializer = SurveySerializer(query)
+                query = Survey.objects.filter(
+                    pk=request.query_params['id']).prefetch_related('questions')
+                serializer = SurveySerializer(query, many=True)
                 calculate_db_queries()
                 return Response(serializer.data, 200)
             except Survey.DoesNotExist:
                 return Response({'error': 'Survey not found'}, 404)
         else:
-            query = Survey.objects.prefetch_related(
-                'questions').all()
+            query = Survey.objects.all().prefetch_related(
+                'questions')
             serializer = SurveySerializer(query, many=True)
             calculate_db_queries()
             return Response(serializer.data, 200)
