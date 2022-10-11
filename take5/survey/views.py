@@ -19,7 +19,7 @@ def surveys(request) -> Response:
                 query = Survey.objects.filter(
                     pk=request.query_params['id']).prefetch_related('questions')
                 serializer = SurveySerializer(query, many=True)
-                calculate_db_queries()
+                # calculate_db_queries()
                 return Response(serializer.data, 200)
             except Survey.DoesNotExist:
                 return Response({'error': 'Survey not found'}, 404)
@@ -27,5 +27,5 @@ def surveys(request) -> Response:
             query = Survey.objects.all().prefetch_related(
                 'questions')
             serializer = SurveySerializer(query, many=True)
-            calculate_db_queries()
+            # calculate_db_queries()
             return Response(serializer.data, 200)
