@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Best survey ever!!!",
+    "questions": [
+      {
+        "question": "Questão 1",
+        "alternatives": [
+          { "alternative": "Aternativa 1" },
+          { "alternative": "Alternativa 2" },
+          { "alternative": "Alternativa 3" }
+        ]
+      },
+      {
+        "question": "Questão 2",
+        "alternatives": [
+          { "alternative": "Alternativa 1" },
+          { "alternative": "Alternativa 2" }
+        ]
+      },
+      {
+        "question": "Questão 3",
+        "alternatives": [
+          { "alternative": "Verdadeiro" },
+          { "alternative": "Falso" }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "NewerSurvey",
+    "questions": [
+      {
+        "question": "Questão Única",
+        "alternatives": [{ "alternative": "Sim" }, { "alternative": "Não" }]
+      }
+    ]
+  }
+]
